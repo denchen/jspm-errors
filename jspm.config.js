@@ -139,9 +139,6 @@ SystemJS.config({
         }
       }
     }
-  },
-  map: {
-    "postcss-simple-vars": "npm:postcss-simple-vars@1.2.0"
   }
 });
 
@@ -320,13 +317,6 @@ SystemJS.config({
         "base64-js": "npm:base64-js@1.1.2"
       }
     },
-    "npm:flux@2.1.1": {
-      "map": {
-        "fbjs": "npm:fbjs@0.1.0-alpha.7",
-        "fbemitter": "npm:fbemitter@2.1.1",
-        "immutable": "npm:immutable@3.8.1"
-      }
-    },
     "npm:warning@3.0.0": {
       "map": {
         "loose-envify": "npm:loose-envify@1.2.0"
@@ -397,18 +387,6 @@ SystemJS.config({
         "cipher-base": "npm:cipher-base@1.0.2",
         "ripemd160": "npm:ripemd160@1.0.1",
         "sha.js": "npm:sha.js@2.4.5"
-      }
-    },
-    "npm:fbjs@0.1.0-alpha.7": {
-      "map": {
-        "whatwg-fetch": "npm:whatwg-fetch@0.9.0",
-        "core-js": "npm:core-js@1.2.7",
-        "promise": "npm:promise@7.1.1"
-      }
-    },
-    "npm:fbemitter@2.1.1": {
-      "map": {
-        "fbjs": "npm:fbjs@0.8.4"
       }
     },
     "npm:loose-envify@1.2.0": {
