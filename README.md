@@ -25,7 +25,8 @@ You should something similar to this in the console (Chrome):
     doLink @ system.src.js:628
     updateLinkSetOnLoad @ system.src.js:674
     (anonymous function) @ system.src.js:490
-    
+
+This error is due to including the line `import 'stardust'` in `web/main.js`. If you comment out that line, you should see the app load properly with "Hello World" in the browser.
 
 This was tested on
 * OSX 10.11.6
