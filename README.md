@@ -1,11 +1,12 @@
-# Purpose
+## Purpose
 
 Demostration of errors installing [stardust](https://github.com/TechnologyAdvice/stardust) (Official Semantic UI for React) via [JSPM](http://jspm.io).
 
-This package was actually pared down from a repo I'm using, and hence there are quite a few packages and functions that are not relevant
-to this demostration. I'll continue to try to remove as many elements as possible while still displaying the error.
+## Caveat
 
-# Setup
+This package was actually pared down from a repo I'm working on, and this repo was set up by someone else. I don't fully understand the setup or all the parts that make it work. I've tried to remove as much as possible (including 99% of the React code) that is not relevant to this demostration, but there is still a lot left over package-wise that I'm unsure of the purpose of or whether it's safe to remove. I will continue to pare it down while still being able to exhibit the error.
+
+## Setup
 
     npm install
     jspm install
