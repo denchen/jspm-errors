@@ -11,7 +11,6 @@ SystemJS.config({
       "babel-plugin-transform-react-jsx": "npm:babel-plugin-transform-react-jsx@6.8.0",
       "babel-plugin-transform-class-properties": "npm:babel-plugin-transform-class-properties@6.11.5",
       "plugin-babel": "npm:systemjs-plugin-babel@0.0.9",
-      "clean-css": "npm:clean-css@3.4.19",
       "net": "github:jspm/nodelibs-net@0.2.0-alpha",
       "module": "github:jspm/nodelibs-module@0.2.0-alpha",
       "tty": "github:jspm/nodelibs-tty@0.2.0-alpha"
@@ -29,12 +28,6 @@ SystemJS.config({
           "babel-helper-builder-react-jsx": "npm:babel-helper-builder-react-jsx@6.9.0",
           "babel-plugin-syntax-jsx": "npm:babel-plugin-syntax-jsx@6.13.0",
           "babel-runtime": "npm:babel-runtime@6.11.6"
-        }
-      },
-      "npm:clean-css@3.4.19": {
-        "map": {
-          "source-map": "npm:source-map@0.4.4",
-          "commander": "npm:commander@2.8.1"
         }
       },
       "npm:babel-runtime@6.11.6": {
@@ -68,11 +61,6 @@ SystemJS.config({
           "lodash": "npm:lodash@4.15.0"
         }
       },
-      "npm:source-map@0.4.4": {
-        "map": {
-          "amdefine": "npm:amdefine@1.0.0"
-        }
-      },
       "npm:babel-traverse@6.15.0": {
         "map": {
           "babel-runtime": "npm:babel-runtime@6.11.6",
@@ -99,11 +87,6 @@ SystemJS.config({
         "map": {
           "babel-runtime": "npm:babel-runtime@6.11.6",
           "babel-types": "npm:babel-types@6.15.0"
-        }
-      },
-      "npm:commander@2.8.1": {
-        "map": {
-          "graceful-readlink": "npm:graceful-readlink@1.0.1"
         }
       },
       "npm:babel-code-frame@6.11.0": {
@@ -156,6 +139,9 @@ SystemJS.config({
         }
       }
     }
+  },
+  map: {
+    "postcss-simple-vars": "npm:postcss-simple-vars@1.2.0"
   }
 });
 
@@ -173,7 +159,6 @@ SystemJS.config({
     "constants": "github:jspm/nodelibs-constants@0.2.0-alpha",
     "core-js": "npm:core-js@1.2.7",
     "crypto": "github:jspm/nodelibs-crypto@0.2.0-alpha",
-    "css": "github:systemjs/plugin-css@0.1.27",
     "domain": "github:jspm/nodelibs-domain@0.2.0-alpha",
     "events": "github:jspm/nodelibs-events@0.2.0-alpha",
     "fs": "github:jspm/nodelibs-fs@0.2.0-alpha",
@@ -181,7 +166,6 @@ SystemJS.config({
     "https": "github:jspm/nodelibs-https@0.2.0-alpha",
     "os": "github:jspm/nodelibs-os@0.2.0-alpha",
     "path": "github:jspm/nodelibs-path@0.2.0-alpha",
-    "postcss-simple-vars": "npm:postcss-simple-vars@1.2.0",
     "process": "github:jspm/nodelibs-process@0.2.0-alpha",
     "react": "npm:react@15.3.1",
     "react-dom": "npm:react-dom@15.3.1",
@@ -277,11 +261,6 @@ SystemJS.config({
         "http-browserify": "npm:stream-http@2.4.0"
       }
     },
-    "npm:postcss-simple-vars@1.2.0": {
-      "map": {
-        "postcss": "npm:postcss@5.2.0"
-      }
-    },
     "npm:fbjs@0.8.4": {
       "map": {
         "core-js": "npm:core-js@1.2.7",
@@ -312,13 +291,6 @@ SystemJS.config({
         "xtend": "npm:xtend@4.0.1",
         "to-arraybuffer": "npm:to-arraybuffer@1.0.1",
         "inherits": "npm:inherits@2.0.3"
-      }
-    },
-    "npm:postcss@5.2.0": {
-      "map": {
-        "source-map": "npm:source-map@0.5.6",
-        "supports-color": "npm:supports-color@3.1.2",
-        "js-base64": "npm:js-base64@2.1.9"
       }
     },
     "npm:history@2.1.2": {
@@ -479,11 +451,6 @@ SystemJS.config({
     "npm:query-string@3.0.3": {
       "map": {
         "strict-uri-encode": "npm:strict-uri-encode@1.1.0"
-      }
-    },
-    "npm:supports-color@3.1.2": {
-      "map": {
-        "has-flag": "npm:has-flag@1.0.0"
       }
     },
     "npm:parse-asn1@5.0.0": {

@@ -42,40 +42,10 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
-    copy: {
-      css: {
-        src: 'dist/css/common/style.css',
-        dest: 'static/css/',
-        expand: true,
-        flatten: true
-      }
-    },
     clean: {
       dist: ['dist']
     },
     exec: execConfig,
-    postcss: {
-      options: {
-        failOnError: true,
-        processors: [
-          require('postcss-import'),
-          require('postcss-mixins')(),
-          require('postcss-nested')(),
-          require('postcss-extend')(),
-          require('postcss-simple-vars')(),
-          require('autoprefixer')({browsers: 'last 2 versions'})
-        ]
-      },
-      dist: {
-        files: [{
-          cwd: 'css/app',
-          dest: 'dist/css',
-          expand: true,
-          ext: '.css',
-          src: ['**/*.css']
-        }]
-      }
-    },
     eslint: {
       code: {
         options: {
@@ -96,10 +66,6 @@ module.exports = function (grunt) {
       options: {
         livereload: true
       },
-      css: {
-        files: ['css/**/*.css'],
-        tasks: ['postcss', 'copy:css']
-      },
       js: {
         files: ['web/**/*.js'],
         tasks: ['eslint']
@@ -111,8 +77,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'eslint',
       'exec:jspm:setup',
-      'exec:jspm:bundle',
-      'copy:css'
+      'exec:jspm:bundle'
     ]);
   });
 
