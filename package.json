@@ -9,15 +9,12 @@
     "start": "grunt serve:dev"
   },
   "dependencies": {
-    "async": "~1.5.2",
+    "async": "^2.0.1",
     "babel-core": "^6.7.4",
-    "bunyan": "~1.6.0",
     "express": "~4.13.4",
     "express-handlebars": "~3.0.0"
   },
   "devDependencies": {
-    "alt": "^0.18.4",
-    "alt-utils": "^1.0.0",
     "babel-cli": "^6.7.5",
     "babel-eslint": "^6.0.0-beta.6",
     "babel-plugin-transform-object-assign": "^6.5.0",
@@ -32,15 +29,9 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-eslint": "^17.3.2",
     "grunt-exec": "^0.4.6",
-    "istanbul": "^1.0.0-alpha.2",
     "jscs": "^2.9.0",
     "jspm": "^0.17.0-beta.25",
-    "load-grunt-tasks": "^3.4.1",
-    "react": "^15.3.0",
-    "react-addons-test-utils": "^15.3.0",
-    "react-dom": "^15.3.0",
-    "react-intl": "^2.0.1",
-    "react-router": "~2.3.0"
+    "load-grunt-tasks": "^3.4.1"
   },
   "jspm": {
     "name": "test",
