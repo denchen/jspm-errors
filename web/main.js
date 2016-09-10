@@ -4,7 +4,7 @@ import { Router, Route, browserHistory } from 'react-router';
 
 // Semantic UI library
 // Comment this line for the React app to load properly
-// import 'stardust';
+import 'stardust';
 
 import MainFrame from './MainFrame';
 
