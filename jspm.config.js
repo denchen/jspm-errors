@@ -152,7 +152,6 @@ SystemJS.config({
     "github:*/*.json"
   ],
   map: {
-    "alt": "npm:alt@0.18.6",
     "assert": "github:jspm/nodelibs-assert@0.2.0-alpha",
     "buffer": "github:jspm/nodelibs-buffer@0.2.0-alpha",
     "child_process": "github:jspm/nodelibs-child_process@0.2.0-alpha",
@@ -180,13 +179,6 @@ SystemJS.config({
     "zlib": "github:jspm/nodelibs-zlib@0.2.0-alpha"
   },
   packages: {
-    "npm:alt@0.18.6": {
-      "map": {
-        "is-promise": "npm:is-promise@2.1.0",
-        "flux": "npm:flux@2.1.1",
-        "transmitter": "npm:transmitter@3.0.1"
-      }
-    },
     "npm:react-intl@2.1.5": {
       "map": {
         "intl-format-cache": "npm:intl-format-cache@2.0.5",
